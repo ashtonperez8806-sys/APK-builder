@@ -1,0 +1,56 @@
+appId: com.copo.gaming
+productName: Copo Gaming
+directories:
+  buildResources: assets
+  output: dist-electron
+files:
+  - dist/**/*
+  - node_modules/**/*
+  - electron-main.js
+  - package.json
+
+win:
+  target:
+    - nsis
+    - portable
+  certificateFile: null
+  certificatePassword: null
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Copo Gaming
+
+portable:
+  artifactName: Copo-Gaming-${version}.exe
+
+mac:
+  target:
+    - dmg
+    - zip
+  category: public.app-category.games
+  icon: assets/icon.icns
+
+dmg:
+  contents:
+    - x: 110
+      y: 150
+      type: file
+    - x: 240
+      y: 150
+      type: link
+      path: /Applications
+
+linux:
+  target:
+    - AppImage
+    - deb
+  category: Game
+
+appImage:
+  artifactName: Copo-Gaming-${version}.AppImage
+
+deb:
+  artifactName: copo-gaming-${version}.deb

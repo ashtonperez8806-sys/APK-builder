@@ -1,0 +1,13 @@
+{
+  "appId": "com.copo.gaming",
+  "appName": "Copo Gaming",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}

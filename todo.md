@@ -67,10 +67,10 @@
 - [ ] Save/load player progress to database
 
 ## Phase 8: Player Account Persistence
-- [ ] Create database schema for user accounts
-- [ ] Create database schema for player progress (Plost)
-- [ ] Create database schema for player progress (Miners Tycoon)
-- [ ] Create database schema for player progress (HOKSHOT)
+- [x] Create database schema for user accounts (copo_accounts table)
+- [x] Create database schema for player progress (Plost) (plost_progress table)
+- [x] Create database schema for player progress (Miners Tycoon) (miners_tycoon_progress table)
+- [x] Create database schema for player progress (HOKSHOT) (hokshot_progress table)
 - [ ] Implement save/load procedures for all games
 - [ ] Test data persistence across sessions
 

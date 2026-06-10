@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 
-const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663738678831/PtDWKfJ9M5i3yQrYAF8bRN/copo-logo-An4obHqncRRgWC6H5BnWXz.webp";
+const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663738678831/PtDWKfJ9M5i3yQrYAF8bRN/copo-logo-transparent-TRUZLjHkxRvHDApEJmXpFX.webp";
 
 export default function AuthHome() {
   const [, navigate] = useLocation();
