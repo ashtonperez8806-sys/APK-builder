@@ -30,39 +30,39 @@
 - [x] Test lobby on all platforms
 
 ## Phase 5: Game A - Plost (3D Tree Cutting)
-- [ ] Set up Three.js 3D environment
-- [ ] Create 3D tree models and terrain
-- [ ] Implement tree cutting/destruction mechanics
-- [ ] Build lumber store NPC and UI
-- [ ] Build Rocks Land Store with NPC Jason
+- [x] Set up Three.js 3D environment
+- [x] Create 3D tree models and terrain
+- [x] Implement tree cutting/destruction mechanics (basic)
+- [x] Build lumber store NPC and UI (placeholder)
+- [x] Build Rocks Land Store with NPC Jason (placeholder)
 - [ ] Implement land browsing with camera snap (left/right buttons)
 - [ ] Add "Buy Land" and "Cancel" buttons
-- [ ] Implement wood collection and burning site
-- [ ] Add money/currency system
+- [x] Implement wood collection and burning site
+- [x] Add money/currency system
 - [ ] Implement car shop and purchase system
 - [ ] Add player inventory system
 - [ ] Save/load player progress to database
 
 ## Phase 6: Game B - Miners Tycoon (3D Tycoon)
-- [ ] Set up Three.js 3D environment for tycoon
-- [ ] Create baseplate and tycoon structure
-- [ ] Implement button pop-up system (buttons appear after purchase)
-- [ ] Add drill and mining mechanics
+- [x] Set up Three.js 3D environment for tycoon
+- [x] Create baseplate and tycoon structure
+- [x] Implement button pop-up system (buttons appear after purchase)
+- [x] Add drill and mining mechanics
 - [ ] Implement weapon system for PvP
 - [ ] Add multiplayer player spawning
-- [ ] Implement rebirth system with base expansion
-- [ ] Add money/currency progression
+- [x] Implement rebirth system with base expansion
+- [x] Add money/currency progression
 - [ ] Save/load tycoon state to database
 
 ## Phase 7: Game C - HOKSHOT (3D Shooting Game)
-- [ ] Set up Three.js 3D environment for shooter
-- [ ] Create bubbly-lettered HOKSHOT title UI
-- [ ] Build home screen with "Resume Playing", Settings, Shop buttons
-- [ ] Implement gun mechanics and shooting
+- [x] Set up Three.js 3D environment for shooter
+- [x] Create bubbly-lettered HOKSHOT title UI
+- [x] Build home screen with "Resume Playing", Settings, Shop buttons
+- [x] Implement gun mechanics and shooting (basic)
 - [ ] Add explosives system
-- [ ] Build shop UI for guns, explosives, gamepasses
-- [ ] Add "LATER ON FOR NEXT UPDATE" label to gamepasses
-- [ ] Implement money-per-kill system
+- [x] Build shop UI for guns, explosives, gamepasses
+- [x] Add "LATER ON FOR NEXT UPDATE" label to gamepasses
+- [x] Implement money-per-kill system
 - [ ] Add multiplayer player spawning
 - [ ] Save/load player progress to database
 
