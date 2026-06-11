@@ -110,14 +110,6 @@ jobs:
 
       - run: pnpm install
       - run: pnpm build
-
-      - name: Initialize Capacitor
-        run: |
-          if [ ! -d "android" ]; then
-            npx cap init
-            npx cap add android
-          fi
-
       - run: npx cap sync android
 
       - name: Build APK

@@ -1,7 +1,7 @@
 {
   "appId": "com.copo.gaming",
   "appName": "Copo Gaming",
-  "webDir": "dist",
+  "webDir": "dist/public",
   "server": {
     "androidScheme": "https"
   },
