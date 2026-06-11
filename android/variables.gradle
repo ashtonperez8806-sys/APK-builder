@@ -1,6 +1,6 @@
 ext {
-    javaSourceCompatibility = JavaVersion.VERSION_17
-    javaTargetCompatibility = JavaVersion.VERSION_17
+    javaSourceCompatibility = JavaVersion.VERSION_21
+    javaTargetCompatibility = JavaVersion.VERSION_21
     minSdkVersion = 24
     compileSdkVersion = 36
     targetSdkVersion = 36
