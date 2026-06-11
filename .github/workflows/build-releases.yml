@@ -82,6 +82,8 @@ jobs:
 
   build-android:
     runs-on: ubuntu-latest
+    env:
+      SKIP_JDK_VERSION_CHECK: 1
     steps:
       - uses: actions/checkout@v4
 
@@ -99,7 +101,12 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - name: Verify Java version
+        run: java -version
+
       - uses: android-actions/setup-android@v3
+        env:
+          SKIP_JDK_VERSION_CHECK: 1
 
       - run: pnpm install
       - run: pnpm build
