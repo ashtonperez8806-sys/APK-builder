@@ -36,30 +36,45 @@ jobs:
         env:
           SKIP_JDK_VERSION_CHECK: 1
 
-      - run: pnpm install
-      - run: pnpm build
-      - run: npx cap sync android
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build web assets
+        run: pnpm build
+
+      - name: Sync Capacitor
+        run: npx cap sync android
 
       - name: Build APK
         run: |
           cd android
+          chmod +x gradlew
           ./gradlew assembleRelease
 
-      - name: Find APK
-        run: find android -name "*.apk" -type f
+      - name: Find APK files
+        run: |
+          echo "=== Looking for APK files ==="
+          find android -name "*.apk" -type f -exec ls -lh {} \;
+          echo "=== APK locations ==="
+          find android -name "*.apk" -type f
 
-      - uses: actions/upload-artifact@v4
+      - name: List build outputs
+        run: |
+          echo "=== Android build output directory ==="
+          ls -la android/app/build/outputs/apk/release/ || echo "Directory not found"
+
+      - name: Upload APK to artifacts
+        uses: actions/upload-artifact@v4
         with:
-          name: copo-gaming-apk
+          name: Copo-Gaming-APK
           path: android/app/build/outputs/apk/release/app-release-unsigned.apk
+          if-no-files-found: warn
           retention-days: 30
 
-      - name: Create Release
-        if: startsWith(github.ref, 'refs/tags/')
-        uses: softprops/action-gh-release@v1
+      - name: Upload all APKs as fallback
+        uses: actions/upload-artifact@v4
         with:
-          files: android/app/build/outputs/apk/release/app-release.apk
-          draft: false
-          prerelease: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          name: All-APK-Files
+          path: android/app/build/outputs/apk/
+          if-no-files-found: warn
+          retention-days: 30
